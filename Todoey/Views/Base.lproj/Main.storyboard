@@ -82,14 +82,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" id="dJj-Hr-MD6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PQt-i2-Bb5">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="30C-ds-RdI" id="2fv-jV-l6f"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchBar" destination="UbL-7G-DGb" id="YCK-m5-XRS"/>
+                        <outlet property="searchBar" destination="UbL-7G-DGb" id="PQf-Lh-ayv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VP5-nn-hZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,8 +100,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GXx-gR-Lda" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eHf-5u-xMC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eHf-5u-xMC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.016804177310000001" green="0.62558861300000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">

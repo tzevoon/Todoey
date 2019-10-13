@@ -39,7 +39,12 @@ class CategoryViewController: SwipeTableViewController {
             
             cell.textLabel?.text = category.name ?? "No Categories added yet"
             
-            cell.backgroundColor = UIColor(hexString: category.colour ?? "41ADFB")
+            guard let categoryColour = UIColor(hexString: category.colour) else {fatalError()}
+            
+            cell.backgroundColor = categoryColour
+            
+            cell.textLabel?.textColor = ContrastColorOf(categoryColour, returnFlat: true)
+
         }
         
         
